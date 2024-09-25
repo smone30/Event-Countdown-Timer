@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  color: #333;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: #4CAF50;
+}
+
+form label {
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333; /* Darker footer for contrast */
+  padding: 20px 0;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Main Section Box */
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.03);
+}
+
+/* Countdown Card */
+.countdown-card {
+  background: linear-gradient(135deg, #ff6f61, #ffeb3b); /* Attractive Bi-color */
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.countdown-card h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.countdown-card .countdown {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+.countdown-card .countdown div {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.countdown-card .countdown div span {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Hover Animation for Countdown Card */
+.countdown-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Second Bi-color Design for Alternate Events */
+.countdown-card:nth-child(even) {
+  background: linear-gradient(135deg, #00bcd4, #009688); /* Teal and Green */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  .countdown-card .countdown {
+    font-size: 1em;
+  }
+
+  .countdown-card .countdown div span {
+    font-size: 2rem;
+  }
+}
